@@ -1,0 +1,27 @@
+package familia41;
+
+import java.util.Scanner;
+
+public class L_Decisao_Ex1 {
+public static void main(String[] args) {
+		
+		Scanner leia = new Scanner(System.in);
+		
+		int n1,n2,n3;
+		
+		System.out.print("Digite o primeiro número: ");
+		n1 = leia.nextInt();
+		System.out.print("Digite o segundo número: ");
+		n2 = leia.nextInt();
+		System.out.print("Digite o terceiro número: ");
+		n3 = leia.nextInt();
+		
+		if(n1 > n2 && n1 > n3) {
+			System.out.printf("O primeiro número digitado é o maior!");
+		} else if (n2 > n1 && n2 > n3){
+			System.out.printf("O segundo número digitado é o maior!");
+		} else {
+			System.out.printf("O terceiro número digitado é o maior!");
+		}
+	}
+}
